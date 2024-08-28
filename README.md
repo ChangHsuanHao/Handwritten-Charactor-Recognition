@@ -1,11 +1,4 @@
 # Comparison of Machine Learning Algorithms and Handwritten Character Recognition (OCR)
-## Credit
-* 指導教授 : 曾國師 教授
-* 作者 : 
-    * 國立中央大學數學系 計算與資料科學組 張軒豪
-        * 資料統整、模型效果比較、OCR實作、論文撰寫
-    * 國立中央大學數學系 計算與資料科學組 熊友澤
-        * 資料統整、模型效果比較、論文撰寫
 ## Abstract
 The topic compares the accuracy and training time of five common machine learning algorithms, and selects the algorithm with the highest accuracy rate, combined with the Canny edge detection operator, to implement multi-object tracking for handwritten character recognition, which can recognize both upper and lower case letters and numbers in English.
 ## Paper
@@ -39,7 +32,8 @@ tensorflow EMNIST and MNIST
 ### Goal
 Recognizing several handwritten characters on a paper through a laptop camera by CNN model.
 
-### Data: EMNIST
+### Model Building (cnn_model_builder_byclass & cnn_model_builder_bymerge)
+#### Data Description: EMNIST
 * Byclass 
     * 697932 training images
     * 116323 testing images
@@ -49,8 +43,8 @@ Recognizing several handwritten characters on a paper through a laptop camera by
     * 116323 testing images
     * 62 unbalanced classes
 * Image sizes are all 28 * 28 pixel
-### Data Preprocessing
-### Model: CNN
+#### Data Preprocessing
+#### Model: CNN
 * Structure
 <img src="https://hackmd.io/_uploads/Hkq2s_4oA.png" width="50%">
 
@@ -63,7 +57,7 @@ Recognizing several handwritten characters on a paper through a laptop camera by
 
 → Chose **Bymerge** as training data
 
-### Image Processing and Prediction
+### Image Processing and Prediction (object_track_cam)
 * Image Collection
     * Use OpenCV to turn on the camera.
     * Set up trackers and start tracking.
