@@ -71,7 +71,7 @@ Recognizing several handwritten characters on a paper through a laptop camera by
     * Using the trained CNN model.
     * Output the results above the tracked character.
 * Result
-[Demo video](https://1drv.ms/v/c/0F31CF811556B421/AZuGZcCfuupKmR15Nz_MdIc?e=A99apN)
+[Demo video](https://1drv.ms/v/c/0f31cf811556b421/EZuGZcCfuupKmR15Nz_MdIcBFdk8YQFGiJ7JrpwnY8P9YA?e=JbsLrU)
     * The ambient light source has a significant impact on the prediction results. To achieve good results, it is essential to have sufficient lighting to illuminate the paper and ensure that the background is dark enough.
     * The paper should be kept as flat as possible and face the camera directly to avoid shadows that could affect image recognition.
 
